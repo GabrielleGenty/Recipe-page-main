@@ -1,0 +1,106 @@
+/*******GENERAL*********/
+
+@font-face{
+    font-family: "Outfit";
+    src:url(./assets/fonts/Outfi/static/Outfit-Regular.ttf) format(true type);
+}
+@font-face{
+    font-family: "young-serif";
+    src:url(./assets/fonts/young-serif/YoungSerif-Regular.ttf) format(true type);
+}
+
+:root {
+  --font-color-primary:hsl(14, 45%, 36%);
+  --font-color-secondary:hsl(332, 51%, 32%);
+  --bg-color-primary: hsl(0, 0%, 100%);
+  --bg-color-secondary:hsl(330, 100%, 98%);
+  --bg-color-body:hsl(30, 54%, 90%);
+  --color-1:hsl(30, 18%, 87%);
+  --color-2:hsl(30, 10%, 34%);
+  --color-3:hsl(24, 5%, 18%);
+  --font-family-default:"outfit";
+  --font-family-titre:"young-serif";
+}
+
+*,
+*::after,
+*::before{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;  
+}
+html{
+    font-size:62.5%
+}
+body{
+    font-size: 1.6rem;
+    line-height:1.6;
+    font-family:var(--font-family-default) ;
+    background-color:var(--bg-color-body) ;
+    color:var(--color-3);
+}
+h1{
+    font-family:var(--font-family-titre);
+    font-size: 4rem;
+}
+
+h2{
+    font-family:var(--color-1);
+    color: var( --font-color-primary);
+    font-size: 3rem;
+}
+h3{
+    font-family:var(--font-family-default); 
+    color: var(--font-color-secondary); 
+    font-size: 2.5rem;
+}
+hr{
+    border-color:var(  --color-1);
+}
+.container{
+    background-color:var(--bg-color-primary);
+    min-width: 375px;
+    border-radius: 25px;
+    margin:200px;
+    margin-top: 100px;
+    padding:40px;
+}
+/*****HEADER*****/
+.image{
+    border-radius: 10PX;
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+.bg-color{
+    background-color:var( --bg-color-secondary);
+    padding: 30px;
+    border-radius: 10px;
+}
+p{
+   margin-bottom: 20px;
+}
+ul>li{
+    list-style-position: inside;
+}
+ul>li::marker{
+    font-weight: 600;
+    color:var(--font-color-primary);
+
+}
+ol>li::marker {
+    font-weight: 600;
+    color:var(--font-color-primary);
+
+}
+.grid{
+    display: grid;
+    grid-template-columns:repeat(2,1fr);
+    padding: 10px;
+}
+div>p{
+    border-bottom: 1px solid var( --color-1);
+}
+.strong-color{
+    color:var(--font-color-primary);
+}
